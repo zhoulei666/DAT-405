@@ -4,7 +4,7 @@
 //DAT405 / GAD405
 //03_NestedForLoop - Visual
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(1000, 500);
   noLoop();
 }
 
@@ -13,14 +13,15 @@ function draw() {
 
   noFill();
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 300; i++) {
     push();
     translate(random(width),random(height));
-
+    rotate(random(2*PI));
+    scale(random(1.5),random(1.5));
     stroke(random(255), random(255), random(255));
     strokeWeight(10);
     //fill(0,random(255));
-    //ellipse(0,0,50,50);
+    //ellipse(0,0,50,50);;
 
     //fill(0);
     ellipse(0,0,40,40);
